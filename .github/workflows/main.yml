@@ -24,7 +24,7 @@ jobs:
         run: npm test || echo "Tests failed, but continuing..."
 
       - name: Build Docker image
-        run: docker build -t faisalkhan158/nodejs-demo-app:latest .
+        run: docker build -t faisalkhan15/nodejs-demo-app:latest .
 
       - name: Log in to DockerHub
         uses: docker/login-action@v3
@@ -33,4 +33,4 @@ jobs:
           password: ${{ secrets.DOCKER_PASSWORD }}
 
       - name: Push Docker image
-        run: docker push faisalkhan158/nodejs-demo-app:latest
+        run: docker push faisalkhan15/nodejs-demo-app:latest
