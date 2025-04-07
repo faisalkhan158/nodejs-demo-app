@@ -1,44 +1,25 @@
-### This repository is no longer maintained!
+# 🚀 DevOps Task 1 - CI/CD Pipeline using GitHub Actions
 
-**For the most up to date test app to get you started on Heroku, head on over to [`node-js-getting-started`](https://github.com/heroku/node-js-getting-started).**
+📌 Objective:
+Automated the build and deployment of a Node.js web application using GitHub Actions and Docker.
 
----
+🛠️ Tools & Technologies:
+- GitHub & GitHub Actions
+- Node.js
+- Docker
+- DockerHub
 
-# node-js-sample
+🔄 CI/CD Workflow:
+This pipeline is triggered on every push to the `main` branch and follows these automated steps:
 
-A barebones Node.js app using [Express 4](http://expressjs.com/).
+1. Checkout Code – Fetch the latest code from the repository  
+2. Authenticate with DockerHub – Secure login using GitHub Secrets (`DOCKER_USERNAME`, `DOCKER_PASSWORD`)  
+3. Build Docker Image – Build a Docker image for the Node.js app  
+4. Push to DockerHub – Push the built image to my DockerHub repository
 
-## Running Locally
 
-Make sure you have [Node.js](http://nodejs.org/) and the [Heroku Toolbelt](https://toolbelt.heroku.com/) installed.
+📦 DockerHub Repository:
+🔗 [faisalkhan15/nodejs-demo-app](https://hub.docker.com/repository/docker/faisalkhan15/nodejs-demo-app)
 
-```sh
-git clone git@github.com:heroku/node-js-sample.git # or clone your own fork
-cd node-js-sample
-npm install
-npm start
-```
-
-Your app should now be running on [localhost:5000](http://localhost:5000/).
-
-## Deploying to Heroku
-
-```
-heroku create
-git push heroku master
-heroku open
-```
-
-Alternatively, you can deploy your own copy of the app using the web-based flow:
-
-[![Deploy to Heroku](https://www.herokucdn.com/deploy/button.png)](https://heroku.com/deploy)
-
-## Documentation
-
-For more information about using Node.js on Heroku, see these Dev Center articles:
-
-- [10 Habits of a Happy Node Hacker](https://blog.heroku.com/archives/2014/3/11/node-habits)
-- [Getting Started with Node.js on Heroku](https://devcenter.heroku.com/articles/getting-started-with-nodejs)
-- [Heroku Node.js Support](https://devcenter.heroku.com/articles/nodejs-support)
-- [Node.js on Heroku](https://devcenter.heroku.com/categories/nodejs)
-- [Using WebSockets on Heroku with Node.js](https://devcenter.heroku.com/articles/node-websockets)
+✅ Status:
+CI/CD pipeline is working perfectly with automatic build and push to DockerHub on every push to the main branch.
