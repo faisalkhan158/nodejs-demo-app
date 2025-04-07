@@ -1,25 +1,24 @@
-# 🚀 DevOps Task 1 - CI/CD Pipeline using GitHub Actions
+# 🚀 DevOps Task 1 – CI/CD Pipeline using GitHub Actions
 
-📌 Objective:
+## 📌 Objective
 Automated the build and deployment of a Node.js web application using GitHub Actions and Docker.
 
-🛠️ Tools & Technologies:
-- GitHub & GitHub Actions
-- Node.js
-- Docker
-- DockerHub
+## 🛠️ Tools & Technologies
+- GitHub & GitHub Actions  
+- Node.js  
+- Docker  
+- DockerHub  
 
-🔄 CI/CD Workflow:
-This pipeline is triggered on every push to the `main` branch and follows these automated steps:
+## 🔄 CI/CD Workflow
+The CI/CD pipeline is triggered on every push to the `main` branch and performs the following steps automatically:
 
-1. Checkout Code – Fetch the latest code from the repository  
-2. Authenticate with DockerHub – Secure login using GitHub Secrets (`DOCKER_USERNAME`, `DOCKER_PASSWORD`)  
-3. Build Docker Image – Build a Docker image for the Node.js app  
-4. Push to DockerHub – Push the built image to my DockerHub repository
+1. **Checkout Code** – Fetch the latest source code from the repository  
+2. **Authenticate with DockerHub** – Secure login using GitHub Secrets (`DOCKER_USERNAME`, `DOCKER_PASSWORD`)  
+3. **Build Docker Image** – Create a Docker image for the Node.js application  
+4. **Push to DockerHub** – Push the image to the linked DockerHub repository  
 
-
-📦 DockerHub Repository:
+## 📦 DockerHub Repository
 🔗 [faisalkhan15/nodejs-demo-app](https://hub.docker.com/repository/docker/faisalkhan15/nodejs-demo-app)
 
-✅ Status:
-CI/CD pipeline is working perfectly with automatic build and push to DockerHub on every push to the main branch.
+## ✅ Status
+CI/CD pipeline is functioning successfully — builds and pushes the Docker image on every push to the main branch.
